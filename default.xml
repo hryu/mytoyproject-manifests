@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="yocto"
+           fetch="https://git.yoctoproject.org/git/"
+           revision="master" />
+  <remote  name="github-hryu"
+           fetch="ssh://git@github.com/hryu/"
+           revision="master" />
+  <remote  name="github-oe"
+           fetch="https://github.com/openembedded"
+           revision="master" />
+
+  <default revision="master"
+           remote="yocto"
+           sync-j="4" />
+
+  <project path="yocto/meta-mytoyproject" name="mytoyproject-meta-mytoyproject" remote="github-hryu" />
+  <project path="build" name="mytoyproject-build" remote="github-hryu" />
+
+  <project path="yocto/poky" name="poky" />
+  <project path="yocto/meta-raspberrypi" name="meta-raspberrypi" />
+  <project path="yocto/meta-intel" name="meta-intel" />
+  <project path="yocto/meta-virtualization" name="meta-virtualization" />
+  <project path="yocto/meta-openembedded" name="meta-openembedded" remote="github-oe" />
+
+  <project path="yocto/yocto-kernel-cache" name="yocto-kernel-cache" />
+  <project path="yocto/yocto-kernel-tools" name="yocto-kernel-tools" />
+
+</manifest>
