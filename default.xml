@@ -2,15 +2,15 @@
 <manifest>
   <remote  name="yocto"
            fetch="https://git.yoctoproject.org/git/"
-           revision="sumo" />
+           revision="hardknott" />
   <remote  name="github-hryu"
            fetch="ssh://git@github.com/hryu/"
-           revision="sumo" />
+           revision="hardknott" />
   <remote  name="github-oe"
            fetch="https://github.com/openembedded"
-           revision="sumo" />
+           revision="hardknott" />
 
-  <default revision="sumo"
+  <default revision="hardknott"
            remote="yocto"
            sync-j="4" />
 
